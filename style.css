@@ -1,0 +1,273 @@
+body {
+    display: block;
+    background-color: white;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.hero-header {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ressources/img/code_bg.jpg");
+  
+    /* Set a specific height */
+    min-height: 380px;
+    height: 630px;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    
+ 
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    margin:20px;
+    width: 30ch;
+    animation: typing 2s steps(35), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+    color:#4ECCA3;  
+  }
+
+  
+  .wrapper .hero-text {
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+nav ul li {
+    list-style: none;
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+    display: inline;
+    border: 1px solid none;
+    margin-right: 25px;
+    margin-top: 15px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+
+nav ul li:hover {
+    background-color: #4ECCA3;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+
+nav a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.summary {
+    width: auto;
+    height: 1000px;
+   
+}
+
+.summary h1 {
+    text-align: center;
+    font-size: 30px;
+}
+.summary p {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    margin-left: 50px;
+    
+    margin-top: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #4ECCA3;
+
+    border-radius: 15px;
+    text-align: center;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    color: #232931;
+    font-size: 20px;
+  }
+
+  .about-section {
+      text-align: center;
+  }
+
+.about-team {
+    text-align: center;
+}
+
+  .column-team {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      pad: 0 8px;
+  }
+
+  .card-team {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color: #4ECCA3;
+      margin: 8px;
+      border-radius: 15px;
+
+  }
+  
+  .container-team {
+      padding: 0 16px;
+      background-color: #232931;
+      color:white;
+      border-radius: 10px;
+  }
+
+  .container::after, .row-team::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  .about-us-title {
+      color: white;
+  }
+
+  .button-team {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: black;
+      background-color: white;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      height: 50px;
+      border-radius: 15px;
+     
+  }
+
+  .button-team:hover {
+      background-color: #555;
+  }
+
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .summary {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .column-team {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-text {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+.html-image {
+    width: 50%;
+    height: 25%;
+    margin-top: 10px;
+}
+
+.testimonial {
+    width: auto;
+    height: 500px;
+    background-color: #232931;
+}
+
+.testimonial h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.meetup {
+    width: auto;
+    height: 500px;
+    background-color: #232931;
+}
+
+.meetup h1, h3 {
+    text-align: center;
+    font-size: 20px;
+}
